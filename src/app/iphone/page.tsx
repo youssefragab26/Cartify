@@ -1,5 +1,6 @@
 import { iphones } from "../data";
 import ProductCard from "../components/productCard";
+import Link from "next/link";
 
 export default function Iphone() {
   return (
@@ -10,11 +11,13 @@ export default function Iphone() {
           {iphones.map((product: any) => {
             return (
               <div key={product.id} className="w-full max-w-sm">
+                <Link href={product.href}>
                 <ProductCard 
                   productName={product.name} 
                   productPrice={product.price} 
                   productImg={product.image}
                 />
+                </Link>
               </div>
             );
           })}

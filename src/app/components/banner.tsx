@@ -1,4 +1,4 @@
-export default function MainContenar(){
+export default function Banner(){
     return (
         <div className="flex flex-col lg:flex-row justify-center items-center mt-4 md:mt-6 w-full max-w-6xl mx-auto bg-white p-4 md:p-6 rounded-xl md:rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
             {/* Content Section */}
@@ -19,8 +19,7 @@ export default function MainContenar(){
                 <img 
                     src="/images/allAppleProduct.jpeg" 
                     alt="all apple products" 
-                    className="object-cover w-full max-w-md lg:max-w-lg h-auto rounded-lg  hover:shadow-md transition-shadow duration-300"
-                    
+                    className="object-cover w-full max-w-md lg:max-w-lg h-auto rounded-lg"
                 />
             </div>
         </div>
