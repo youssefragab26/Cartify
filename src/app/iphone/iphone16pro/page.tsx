@@ -1,7 +1,9 @@
+import ProductPage from "@/app/components/productPage";
+
 export default function Iphone16pro(){
     return(
         <div>
-            <h1>iPhone 16 Pro</h1>
+            <ProductPage />
         </div>
     )
 }

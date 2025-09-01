@@ -6,7 +6,7 @@ type ProductCardProps = {
 export default function ProductCard({productName , productPrice , productImg}: ProductCardProps){
     return (
         <div className="w-full">
-           <div className="w-full h-80 md:h-96 bg-white m-2 md:m-2.5 rounded-xl md:rounded-2xl p-2 md:p-2.5 shadow-sm hover:shadow-md transition-shadow">
+           <div className="w-65 h-80 md:h-96 bg-white m-2 md:m-2.5 rounded-xl md:rounded-2xl p-2 md:p-2.5 shadow-sm hover:shadow-md transition-shadow">
             <div className="h-[60%] bg-amber-200 rounded-lg overflow-hidden">
                 <img src={productImg} className="object-cover w-full h-full" alt={productName}/>
             </div>

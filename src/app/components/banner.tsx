@@ -1,5 +1,6 @@
 export default function Banner(){
     return (
+        <div>
         <div className="flex flex-col lg:flex-row justify-center items-center mt-4 md:mt-6 w-full max-w-6xl mx-auto bg-white p-4 md:p-6 rounded-xl md:rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
             {/* Content Section */}
             <div className="bg-white p-4 md:p-6 w-full lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0 lg:mr-8">
@@ -22,6 +23,8 @@ export default function Banner(){
                     className="object-cover w-full max-w-md lg:max-w-lg h-auto rounded-lg"
                 />
             </div>
+        </div>
+        <hr className="w-full max-w-6xl mx-auto mt-4 md:mt-6 border-t-2 border-gray-200" />
         </div>
     )
 }
