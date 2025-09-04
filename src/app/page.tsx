@@ -1,6 +1,6 @@
-import Banner from "./components/banner"
-import BestSeller from "./components/bestSeller"
-import NewArrivals from "./components/newArrivals"
+import Banner from "./Components/banner"
+import BestSeller from "./Components/bestSeller"
+import NewArrivals from "./Components/newArrivals"
 
 export default function CartifyHome(){
   return (

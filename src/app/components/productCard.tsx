@@ -1,3 +1,4 @@
+import Stock from "./stock"
 type ProductCardProps = {
     productName: string ,
     productPrice: number ,

@@ -1,4 +1,4 @@
-import { bestSeller } from "../data/bestSeller"
+import { bestSeller } from "../Data/bestSeller"
 import ProductCard from "./productCard"
 
 export default function BestSeller() {

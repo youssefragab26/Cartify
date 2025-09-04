@@ -1,5 +1,5 @@
 import ProductCard from "./productCard"
-import { newArrivals } from "../data"
+import { newArrivals } from "../Data"
 
 
 export default function NewArrivals(){

@@ -1,5 +1,5 @@
-import { iphones } from "../data";
-import ProductCard from "../components/productCard";
+import { iphones } from "../Data";
+import ProductCard from "../Components/productCard";
 import Link from "next/link";
 
 export default function Iphone() {

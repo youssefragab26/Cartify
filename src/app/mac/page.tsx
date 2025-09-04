@@ -1,5 +1,5 @@
-import { macs } from "../data";
-import ProductCard from "../components/productCard";
+import { macs } from "../Data";
+import ProductCard from "../Components/productCard";
 
 export default function Macs() {
   return (

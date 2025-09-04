@@ -1,5 +1,5 @@
-import { ipads } from "../data";
-import ProductCard from "../components/productCard";
+import { ipads } from "../Data";
+import ProductCard from "../Components/productCard";
 
 export default function Ipad() {
   return (

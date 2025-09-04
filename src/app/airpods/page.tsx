@@ -1,5 +1,5 @@
-import { airpods } from "../data";
-import ProductCard from "../components/productCard";
+import { airpods } from "../Data";
+import ProductCard from "../Components/productCard";
 
 export default function AirPods() {
   return (

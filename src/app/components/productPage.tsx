@@ -1,3 +1,6 @@
+import {iphones} from "../Data"
+import InStock from "./inStock"
+import OutOfStock from "./outOfStock"
 export default function ProductPage(){
     return (
         <div>
@@ -42,6 +45,8 @@ export default function ProductPage(){
                         <button className="bg-black hover:bg-gray-800 cursor-pointer text-white h-10 md:h-11 w-50 rounded-lg md:rounded-xl m-0 md:m-1 text-sm md:text-base transition-colors">Buy Now</button>
                         <button className="bg-blue-800 hover:bg-blue-950 cursor-pointer text-white h-10 md:h-11 w-50 rounded-lg md:rounded-xl m-0 md:m-1 text-sm md:text-base transition-colors">Add to Cart</button>
                      </div>
+                     <hr className="text-neutral-200 my-5"/>
+                     {iphones.find((iphone) => iphone.id === 1)?.inStock ? <InStock /> : <OutOfStock />}
 
                     
                 </div>

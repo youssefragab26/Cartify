@@ -1,4 +1,4 @@
-import ProductPage from "@/app/components/productPage";
+import ProductPage from "@/app/Components/productPage";
 
 export default function Iphone16pro(){
     return(

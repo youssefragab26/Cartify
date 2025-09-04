@@ -1,5 +1,5 @@
-import { watches } from "../data/watch";
-import ProductCard from "../components/productCard";
+import { watches } from "../Data/watch";
+import ProductCard from "../Components/productCard";
 
 export default function Watch() {
     return (
