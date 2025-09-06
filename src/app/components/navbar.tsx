@@ -58,11 +58,15 @@ export default function Navbar() {
                   {cartCount}
                 </span>
               )}
+              <Link href={"/cart"}>
               <FaCartShopping className="text-xl md:text-2xl"/>
+              </Link>
             </button>
+            
             <button className="mx-1 md:mx-2">
               <CgProfile className="text-xl md:text-2xl"/>
             </button>
+
           </div>
         </div>
 
