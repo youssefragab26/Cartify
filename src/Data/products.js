@@ -5,7 +5,7 @@ export const Products = [
     model: "iPhone 17",
     image: "/images/iPhones/iphone17.jpeg",
     colors: "Lavender",
-    price: 999,
+    price: "62,500",
     storageOptions: [
       { size: "128GB", price: 999 },
       { size: "256GB", price: 1099 },
@@ -18,7 +18,7 @@ export const Products = [
     model: "iPhone 17 Pro",
     image: "/images/iPhones/iphone17pro.jpeg",
     colors: "Cosmic Orange",
-    price: 999,
+    price: "86,500",
     storageOptions: [
       { size: "256GB", price: 1199 },
       { size: "512GB", price: 1349 },
@@ -31,7 +31,7 @@ export const Products = [
     model: "iPhone 17 Pro Max",
     image: "/images/iPhones/iphone17pro.jpeg",
     colors: "Cosmic Orange",
-    price: 999,
+    price: "94,000",
     storageOptions: [
       { size: "256GB", price: 1399 },
       { size: "512GB", price: 1549 },

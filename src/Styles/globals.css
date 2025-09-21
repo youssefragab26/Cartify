@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: black;   /* يغير لون السهم */
+  font-size: 20px; /* يغير حجمه */
+  font-weight: bold;
+}

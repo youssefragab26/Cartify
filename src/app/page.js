@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div>
       <Banner />
-      <BestSeller />
       <NewArrivals />
+      <BestSeller />
       <Footer />
     </div>
   );
