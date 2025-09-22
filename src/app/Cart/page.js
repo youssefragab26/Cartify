@@ -6,7 +6,6 @@ import { useContext } from "react";
 
 export default function Cart() {
   const { cart, setCart } = useContext(CartContext);
-  console.log(cart);
 
   // setCart([...cart , {name:productName , price: productPrice , img: productImg , storage: productStorage , color: productColor}])
   return (
@@ -34,7 +33,7 @@ export default function Cart() {
               ) : (
                 cart.map((product) => {
                   return (
-                    <div key={product.name}>
+                    <div key={product.price}>
                       <CartItem
                         productName={product.name}
                         productPrice={product.price}
