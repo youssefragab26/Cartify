@@ -45,8 +45,9 @@ export default function Navbar() {
           </div>
           <div className={`flex gap-2 justify-end ${isMobileMenuOpen ? 'block' : 'hidden md:flex'}`}>
             <button className="mx-1 md:mx-2 relative rounded-full p-2 hover:bg-gray-100">
-              <span>{cart.length}</span>
+              
               <Link href={"/Cart"}>
+              <span>{cart.length}</span>
               <FaCartShopping className="text-xl md:text-2xl text-gray-800"/>
               </Link>
             </button>

@@ -1,9 +1,38 @@
 export const newArrivals = [
-    { id: 1, name: "iPhone 17 Pro", price: "86,500", image: "/images/iPhones/iphone17pro.jpeg", href: "/iphone/iphone16e" },
-    { id: 2, name: "iPhone 17", price: "62,500", image: "/images/iPhones/iphone17.jpeg", href: "/iphone/iphone16e" },
-    { id: 3, name: "iPhone Air", price: "79,000", image: "/images/iPhones/iphoneAir.jpeg", href: "/iphone/iphone16e" },
-    { id: 4, name: "AirPods Pro (3rd Gen)", price: "13,900", image: "/images/AirPods/airpodspro3.jpeg" },
-    { id: 5, name: "", price: "", image: "/images/" },
-    { id: 6, name: "", price: "", image: "/images/" },
-    
-]
+  {
+    id: 20251,
+    name: "iPhone 17",
+    model: "iPhone 17",
+    image: "/images/iPhones/iphone17.jpeg",
+    colors: "Lavender",
+    price: 62500,
+    storage: "256GB",
+  },
+  {
+    id: 20252,
+    name: "iPhone 17 Pro",
+    model: "iPhone 17 Pro",
+    image: "/images/iPhones/iphone17pro.jpeg",
+    colors: "Cosmic Orange",
+    price: 86500,
+    storage: "256GB",
+  },
+  {
+    id: 20254,
+    name: "iPhone Air",
+    model: "iPhone Air",
+    image: "/images/iPhones/iphoneAir.jpeg",
+    colors: "Sky Blue",
+    price: 79000,
+    storage: "256GB",
+  },
+  {
+    id: 20255,
+    name: "AirPods Pro (3rd Gen)",
+    model: "AirPods Pro (3rd Gen)",
+    image: "/images/AirPods/airpodspro3.jpeg",
+    colors: "",
+    price: 79000,
+    storage: "",
+  },
+];

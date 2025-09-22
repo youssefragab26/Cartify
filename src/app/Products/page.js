@@ -16,6 +16,8 @@ export default function Products() {
                   productPrice={product.price}
                   productImg={product.image}
                   href=""
+                  productColor={product.colors}
+                  productStorage={product.storage}
                 />
               </div>
             );

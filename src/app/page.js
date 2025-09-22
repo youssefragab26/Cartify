@@ -10,7 +10,6 @@ export default function Home() {
       <Banner />
       <NewArrivals />
       <BestSeller />
-      <Footer />
     </div>
   );
 }
