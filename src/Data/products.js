@@ -89,4 +89,13 @@ export const Products = [
     price: 11900,
     storage: "",
   },
+  {
+    id: 20246,
+    name: "AirPods 4 (ANC)",
+    model: "Airpods4(ANC)",
+    image: "/images/AirPods/airpods4anc.jpeg",
+    colors: "",
+    price: 0,
+    storage: "",
+  },
 ]

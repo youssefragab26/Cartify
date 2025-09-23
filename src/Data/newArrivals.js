@@ -32,7 +32,7 @@ export const newArrivals = [
     model: "AirPods Pro (3rd Gen)",
     image: "/images/AirPods/airpodspro3.jpeg",
     colors: "",
-    price: 79000,
+    price: 13900,
     storage: "",
   },
 ];
