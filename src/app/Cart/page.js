@@ -33,7 +33,7 @@ export default function Cart() {
               ) : (
                 cart.map((product) => {
                   return (
-                    <div key={product.price}>
+                    <div key={product.id}>
                       <CartItem
                         productName={product.name}
                         productPrice={product.price}
