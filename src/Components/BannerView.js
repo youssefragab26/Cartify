@@ -18,7 +18,7 @@ export default function BannerView() {
         slidesPerView={1}
         // navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 10000 }}
+        autoplay={{ delay: 5000 }}
       >
         <SwiperSlide>
           <Banner

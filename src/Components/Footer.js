@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -10,22 +11,31 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
               <div className="w-30 h-30 bg-gradient-to-r bg-blue-600 rounded-lg flex items-center justify-center mr-3 shadow-lg">
-                <img src="/appLogo.png" className="w-full h-full object-contain" />
+                <img
+                  src="/appLogo.png"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              
             </div>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-md mb-6">
-              Your premium destination for Apple products and accessories. Discover the latest technology with exceptional service.
+              Your premium destination for Apple products and accessories.
+              Discover the latest technology with exceptional service.
             </p>
             <div className="flex space-x-4">
               <button className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-blue-500/25">
-                <span className="text-lg"><FaFacebook /></span>
+                <span className="text-lg">
+                  <FaFacebook />
+                </span>
               </button>
               <button className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-pink-500/25">
-                <span className="text-lg"><FaInstagram /></span>
+                <span className="text-lg">
+                  <FaInstagram />
+                </span>
               </button>
               <button className="w-10 h-10 bg-gray-800 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-blue-500/25">
-                <span className="text-lg"><FaLinkedin /></span>
+                <span className="text-lg">
+                  <FaLinkedin />
+                </span>
               </button>
             </div>
           </div>
@@ -38,31 +48,42 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                <a
+                  href="/"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group"
+                >
                   <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-blue-400 transition-colors duration-200"></span>
                   Home
                 </a>
               </li>
               <li>
-                <a href="/iphone" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
-                  <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-blue-400 transition-colors duration-200"></span>
-                  iPhone
-                </a>
+                  <Link href={"Products/iPhones"}>
+                    <div className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                    <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-blue-400 transition-colors duration-200"></span>
+                    iPhone</div>
+                  </Link>
               </li>
               <li>
-                <a href="/mac" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
-                  <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-blue-400 transition-colors duration-200"></span>
-                  Mac
-                </a>
+                <Link href={"Products/Macs"}>
+                    <div className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                    <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-blue-400 transition-colors duration-200"></span>
+                    Mac</div>
+                  </Link>
               </li>
               <li>
-                <a href="/airpods" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                <a
+                  href="/airpods"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group"
+                >
                   <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-blue-400 transition-colors duration-200"></span>
                   AirPods
                 </a>
               </li>
               <li>
-                <a href="/ipad" className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                <a
+                  href="/ipad"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm md:text-base flex items-center group"
+                >
                   <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-blue-400 transition-colors duration-200"></span>
                   iPad
                 </a>
@@ -78,31 +99,46 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group"
+                >
                   <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-green-400 transition-colors duration-200"></span>
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group"
+                >
                   <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-green-400 transition-colors duration-200"></span>
                   Shipping Info
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group"
+                >
                   <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-green-400 transition-colors duration-200"></span>
                   Returns
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group"
+                >
                   <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-green-400 transition-colors duration-200"></span>
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm md:text-base flex items-center group"
+                >
                   <span className="w-1 h-1 bg-gray-500 rounded-full mr-2 group-hover:bg-green-400 transition-colors duration-200"></span>
                   Size Guide
                 </a>
@@ -114,9 +150,12 @@ export default function Footer() {
         {/* Newsletter Section */}
         <div className="border-t border-gray-800 pt-8 mb-8">
           <div className="text-center">
-            <h3 className="text-xl md:text-2xl font-semibold mb-3 text-white">Stay Updated</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-3 text-white">
+              Stay Updated
+            </h3>
             <p className="text-gray-300 text-sm md:text-base mb-6 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest products and exclusive offers
+              Subscribe to our newsletter for the latest products and exclusive
+              offers
             </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
@@ -140,13 +179,28 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-blue-400 transition-colors duration-200">Privacy Policy</a>
-              <a href="#" className="hover:text-blue-400 transition-colors duration-200">Terms of Service</a>
-              <a href="#" className="hover:text-blue-400 transition-colors duration-200">Cookie Policy</a>
+              <a
+                href="#"
+                className="hover:text-blue-400 transition-colors duration-200"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="hover:text-blue-400 transition-colors duration-200"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#"
+                className="hover:text-blue-400 transition-colors duration-200"
+              >
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

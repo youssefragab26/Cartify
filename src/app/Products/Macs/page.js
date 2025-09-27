@@ -1,7 +1,8 @@
 import { Products } from "@/Data/products";
+import ProductCard from "@/Components/ProductCard";
 export default function Mac() {
   let Macs = Products.filter((product) => {
-    return (product.model = "Mac");
+    return (product.model === "Mac");
   });
   return (
     <div className="w-full max-w-6xl mx-auto mt-10">
