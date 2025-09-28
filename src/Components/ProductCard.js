@@ -38,7 +38,7 @@ export default function ProductCard({
   return (
     <div className="w-full">
       <div className="group relative w-full max-w-[220px] md:max-w-[260px] mx-auto bg-white m-2 md:m-2.5 rounded-3xl border border-gray-200/70 p-4 md:p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition duration-200 ease-out overflow-hidden">
-        {productColor === "" && productStorage === "" ? null : (
+        {productColor === "" && productStorage === "" ? (null) : (
           <div
             id="colorAndStorage"
             className="absolute top-3 left-3 flex items-center gap-2 z-10"
@@ -75,21 +75,40 @@ export default function ProductCard({
             )}
           </div>
         </div>
-        <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-3 px-1">
-          <Link href={"/Cart"}>
-            <button
-              className="h-10 md:h-11 w-full sm:w-32 cursor-pointer rounded-full bg-black text-white text-sm md:text-base font-medium hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-black/30 active:scale-[0.98] transition"
-              onClick={buyNow}
-            >
-              Buy
-            </button>
-          </Link>
-          <button
-            className="h-10 md:h-11 w-1/2 sm:w-36 cursor-pointer rounded-full border border-gray-300 bg-white text-gray-900 text-sm md:text-base font-medium hover:bg-gray-50 active:scale-[0.98] transition"
-            onClick={addToCart}
-          >
-            +
-          </button>
+        <div >
+          {productPrice === 0 ? (
+            <div>
+              <div id="sold out" className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-3 px-1 opacity-70 grayscale">
+                <button
+                  className="h-10 md:h-11 w-full sm:w-32 rounded-full bg-black text-white text-sm md:text-base font-medium  focus:outline-none focus:ring-2 focus:ring-black/30 active:scale-[0.98] transition"
+                >
+                  Buy
+                </button>
+              <button
+                className="h-10 md:h-11 w-1/2 sm:w-36 rounded-full border border-gray-300 bg-white text-gray-900 text-sm md:text-base font-medium hover:bg-gray-50 active:scale-[0.98] transition"
+              >
+                +
+              </button>
+            </div>
+            </div>
+          ) : (
+            <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-3 px-1">
+              <Link href={"/Cart"}>
+                <button
+                  className="h-10 md:h-11 w-full sm:w-32 cursor-pointer rounded-full bg-black text-white text-sm md:text-base font-medium hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-black/30 active:scale-[0.98] transition"
+                  onClick={buyNow}
+                >
+                  Buy
+                </button>
+              </Link>
+              <button
+                className="h-10 md:h-11 w-1/2 sm:w-36 cursor-pointer rounded-full border border-gray-300 bg-white text-gray-900 text-sm md:text-base font-medium hover:bg-gray-50 active:scale-[0.98] transition"
+                onClick={addToCart}
+              >
+                +
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
