@@ -28,7 +28,7 @@ export default function Sections() {
           </div>
         </div>
         </Link>
-        <Link href={"/Products/iPhones"}> 
+        <Link href={"/Products/Airpods"}> 
         <div className="group bg-white rounded-3xl border border-gray-200/70 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition duration-200 ease-out overflow-hidden cursor-pointer">
           <div className="aspect-[4/3] bg-white flex items-center justify-center">
             <img src="/images/airpod.png" alt="AirPods" className="w-full h-full object-contain p-6 group-hover:scale-[1.03] transition-transform duration-300 ease-out" />
@@ -38,7 +38,7 @@ export default function Sections() {
           </div>
         </div>
         </Link>
-        <Link href={"/Products/iPhones"}> 
+        <Link href={"/Products/Accessories"}> 
         <div className="group bg-white rounded-3xl border border-gray-200/70 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition duration-200 ease-out overflow-hidden cursor-pointer">
           <div className="aspect-[4/3] bg-white flex items-center justify-center">
             <img src="/images/accessories.png" alt="Accessories" className="w-full h-full object-contain p-6 group-hover:scale-[1.03] transition-transform duration-300 ease-out" />
